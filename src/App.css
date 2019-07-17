@@ -1,16 +1,19 @@
+html{
+  background: #e74c3c;
+}
+
 .container {
   text-align: center;
-  border: 2px solid red;
   background-image:linear-gradient(#000000, #e74c3c);
 }
 
 .cardHolder{
-  width: 700px;
+  width: 1000px;
   background: linear-gradient(#000000, #e74c3c);
   box-shadow:  10px 10px  10px rgb(16, 17, 16);
   margin: 3rem auto;
   padding: 3rem 2rem;
-  min-height: 16.5rem;
+  min-height: 500px;
 }
 .nasa-navs{
   display: flex;
@@ -22,6 +25,7 @@
    text-decoration: none;
    color: white;
    margin-left: 20px;
+   font-size: 25px
  }
 
 
