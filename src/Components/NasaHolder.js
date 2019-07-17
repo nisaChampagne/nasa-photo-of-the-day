@@ -3,10 +3,12 @@ import axios from 'axios';
 
 
 export default function NasaHolder() {
-  const [mediaUrl, setMediaUrl] = useState([]);
-  const [imgTitle, setImgTitle] = useState([]);
-  const [imgDate, setImgDate] = useState([]);
-  const [imgInfo, setImgInfo] = useState([]);
+  // const [mediaUrl, setMediaUrl] = useState([]);
+  // const [imgTitle, setImgTitle] = useState([]);
+  // const [imgDate, setImgDate] = useState([]);
+  // const [imgInfo, setImgInfo] = useState([]);
+
+  const [data, setData] = useState({});
 
   console.log('use effect man');
 
@@ -14,23 +16,26 @@ export default function NasaHolder() {
     useEffect(() => {
         axios.get(`https://api.nasa.gov/planetary/apod?api_key=DEMO_KEY&date=2019-01-01`)
         .then(res => {
+          const data = res.data;
+          setData(data);
 
 
-    /////URL
-          const mediaUrl = res.data.url;
-          setMediaUrl(mediaUrl);
 
-   ////TITLE
-          const imgTitle = res.data.title;
-          setImgTitle(imgTitle);
+  //   /////URL
+  //         const mediaUrl = res.data.url;
+  //         setMediaUrl(mediaUrl);
 
-    ////DATE
-          const imgDate = res.data.date;
-          setImgDate(imgDate);
+  //  ////TITLE
+  //         const imgTitle = res.data.title;
+  //         setImgTitle(imgTitle);
 
-    ///EXPLANATION
-          const imgInfo= res.data.explanation;
-          setImgInfo(imgInfo);
+  //   ////DATE
+  //         const imgDate = res.data.date;
+  //         setImgDate(imgDate);
+
+  //   ///EXPLANATION
+  //         const imgInfo= res.data.explanation;
+  //         setImgInfo(imgInfo);
 
 
 
@@ -39,10 +44,10 @@ export default function NasaHolder() {
   
     return (
       <div className="cardHolder">
-        <h2>{imgTitle}</h2>
-        <p className='nasa-date'>{imgDate}</p>
-        <img className='nasaImage' alt='Space'src={mediaUrl} style={{ maxWidth: "400px" }} />
-        <p className='nasa-text'>{imgInfo}</p>
+        <h2>{data.title}</h2>
+        <p className='nasa-date'>{data.date}</p>
+        <img className='nasaImage' alt='Space'src={data.url} style={{ maxWidth: "400px" }} />
+        <p className='nasa-text'>{data.explanation}</p>
         <p>Space and Science... and stuff---famous quote by gas station guy in Houston</p>
       </div>
     );
