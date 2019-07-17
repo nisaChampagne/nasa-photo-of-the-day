@@ -1,8 +1,6 @@
 import React from "react";
 import NasaContainer from './Components/NasaContainer';
 import Nav from './Components/Nav';
-import NasaCard from './Components/NasaCard';
-import axios from 'axios';
 import Header from './Components/Header';
 
 import "./App.css";

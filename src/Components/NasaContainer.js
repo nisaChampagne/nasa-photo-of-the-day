@@ -2,20 +2,17 @@ import React, {useState, useEffect} from 'react';
 import axios from 'axios';
 import NasaCard from './NasaCard';
 
-import { thisExpression } from '@babel/types';
-
 
 export default function NasaContainer() {
-  const axios = require('axios')
-  const [spacePhoto, setSpacePhoto] = useState([]);
-  const [spaceTitle, setSpaceTitle] = useState([]);
-  const [date, setDate] = useState([]);
-  const [info, setInfo] = useState([]);
+  const [imgUrl, setImgUrl] = useState([]);
+  const [imgTitle, setImgTitle] = useState([]);
+  const [imgDate, setImgDate] = useState([]);
+  const [imgInfo, setImgInfo] = useState([]);
 
 
 
     useEffect(() => {
-      axios.get(`https://api.nasa.gov/planetary/apod?api_key=X7831OHO7jNbCUFp6ZquUbFjI2txHRDvsbay1fU4&date=2019-07-17`)
+        axios.get(`https://api.nasa.gov/planetary/apod?api_key=DEMO_KEY`)
         .then(res => {
           const imgUrl = res.data.url;
           console.log(imgUrl);
@@ -25,15 +22,16 @@ export default function NasaContainer() {
           console.log(imgDate);
           const imgInfo= res.data.explanation;
           console.log(imgInfo);
-
+          setImgUrl(imgUrl);
+          setImgTitle(imgTitle);
+          setImgDate(imgDate);
+          setImgInfo(imgInfo);
         });
     }, []);
   
     return (
       <div className="nasa-container">
-        <button >This Button</button>
-        <button>That Button</button>
-         <NasaCard  key={spacePhoto} imgUrl={spacePhoto} imgTitle={spaceTitle} imgDate={date} imgInfo={info}/>
+         <NasaCard  key='1055' imgUrl={imgUrl} imgTitle={imgTitle} imgDate={imgDate} imgInfo={imgInfo}/>
       </div>
     );
   }
