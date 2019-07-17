@@ -1,16 +1,22 @@
 import React from "react";
-import NasaContainer from './Components/NasaContainer';
-import Nav from './Components/Nav';
-import Header from './Components/Header';
+import NasaHolder from "./Components/NasaHolder";
+import Nav from "./Components/Nav";
+import Header from "./Components/Header";
 
 import "./App.css";
 
 function App() {
   return (
-    <div className="App">
-      <Header />
+    <div className="container">
+      <div className='nasa-navs'>
       <Nav />
-        <NasaContainer />
+      </div>
+      <div className="nasa-header">
+        <Header />
+      </div>
+      <div className="nasa-holder">
+        <NasaHolder />
+      </div>
     </div>
   );
 }

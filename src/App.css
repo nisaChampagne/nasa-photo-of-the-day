@@ -1,13 +1,53 @@
-.App {
+.container {
   text-align: center;
+  border: 2px solid red;
+  background-image:linear-gradient(#000000, #e74c3c);
 }
 
+.cardHolder{
+  width: 700px;
+  background: linear-gradient(#000000, #e74c3c);
+  box-shadow:  10px 10px  10px rgb(16, 17, 16);
+  margin: 3rem auto;
+  padding: 3rem 2rem;
+  min-height: 16.5rem;
+}
+.nasa-navs{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+ a.navs{
+   justify-content: space-around;
+   text-decoration: none;
+   color: white;
+   margin-left: 20px;
+ }
+
+
+
+.nasa-header, .nasa-text, .nasa-date, h2{
+  color: white;
+}
+
+.nasaImage{
+  box-shadow: 5px 5px 5px #000000;
+}
+
+h1{
+  font-size: 25px;
+
+}
+
+
+
+/* 
 .App-logo {
   animation: App-logo-spin infinite 20s linear;
   height: 40vmin;
   pointer-events: none;
 }
-
+/* 
 .App-header {
   background-color: #282c34;
   min-height: 100vh;
@@ -17,8 +57,8 @@
   justify-content: center;
   font-size: calc(10px + 2vmin);
   color: white;
-}
-
+} */
+/* 
 .App-link {
   color: #61dafb;
 }
@@ -30,4 +70,5 @@
   to {
     transform: rotate(360deg);
   }
-}
+} */
+
