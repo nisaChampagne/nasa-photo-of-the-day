@@ -30,19 +30,20 @@ html{
 
 
 
-.nasa-header, .nasa-text, .nasa-date, h2{
-  color: white;
-}
 
 .nasaImage{
   box-shadow: 5px 5px 5px #000000;
 }
 
-h1{
-  font-size: 25px;
+=
 
+button{
+  padding: 5px 15px 5px 10px;
+  border-radius: 10px;
+  background: white;
+  font-size: 15px;
+  margin-left: 20px;
 }
-
 
 
 /* 

@@ -3,7 +3,7 @@ import React from 'react';
 function Header(){
     return (
         <div className='header'>
-            <h1>NASA Photo of the Day!</h1>
+            <h1 style={{color: 'white', fontSize: '25px'}}>NASA Photo of the Day!</h1>
         </div>
     )
 }

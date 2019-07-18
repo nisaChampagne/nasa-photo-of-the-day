@@ -10,7 +10,7 @@ export default function NasaHolder() {
 
 
     useEffect(() => {
-        axios.get(`https://api.nasa.gov/planetary/apod?api_key=DEMO_KEY&date=${date}`)
+        axios.get(`https://api.nasa.gov/planetary/apod?api_key=KwcckJGIqavWg7CLaqmH1nj6I2TBbwNnHagiZa1R&date=${date}`)
         .then(res => {
           const data = res.data;
           setData(data);
@@ -19,13 +19,19 @@ export default function NasaHolder() {
 
     return (
       <div className="cardHolder">
+        <button onClick={() => setDate("2019-01-01")}>01/01/2019</button>
         <button onClick={() => setDate("2019-01-02")}>01/02/2019</button>
         <button onClick={() => setDate("2019-01-03")}>01/03/2019</button>
-        <h2>{data.title}</h2>
-        <p className='nasa-date'>{data.date}</p>
-        <img className='nasaImage' alt='Space'src={data.url} style={{ maxWidth: "400px" }} />
-        <p className='nasa-text'>{data.explanation}</p>
-        <p>Space and Science... and stuff---famous quote by gas station guy in Houston</p>
+        <button onClick={() => setDate("2019-01-04")}>01/04/2019</button>
+        <button onClick={() => setDate("2019-01-05")}>01/05/2019</button>
+        <button onClick={() => setDate("2019-01-06")}>01/06/2019</button>
+        <button onClick={() => setDate("2019-01-07")}>01/07/2019</button>
+
+        <h2 style={{color: 'white'}}>{data.title}</h2>
+        <p className='nasa-date' style={{color: 'white'}}>{data.date}</p>
+        <img className='nasaImage' alt='Space'style={{color: 'white' }} src={data.url} style={{ maxWidth: "400px" }} />
+        <p className='nasa-text' style={{color: 'white'}}>{data.explanation}</p>
+        <p style={{color: 'white'}}>Space and Science... and stuff---famous quote by gas station guy in Houston</p>
       </div>
     );
   }
