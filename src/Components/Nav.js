@@ -1,14 +1,15 @@
 import React from 'react';
+import { Button } from 'semantic-ui-react'
 
 function Nav(){
     return(
-        <nav>
-            <a className='navs' href='https://www.nasa.gov/'> Home</a>
-            <a className='navs' href='https://www.nasa.gov/'> Space</a>
-            <a className='navs'  href='https://www.nasa.gov/'> Science</a>
-            <a className='navs' href='https://www.nasa.gov/'> And Stuff</a>
-
-        </nav>
+    
+        <div>
+            <Button color='teal'className='navs' href='https://www.nasa.gov/'> Home</Button>
+            <Button color='blue'className='navs' href='https://www.nasa.gov/'> Space</Button>
+            <Button color='violet' className='navs' href='https://www.nasa.gov/'> Science</Button>
+            <Button color='purple'className='navs' href='https://www.nasa.gov/'> Stuff</Button>
+        </div>
     )
 }
 
