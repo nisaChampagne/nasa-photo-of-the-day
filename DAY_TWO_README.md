@@ -42,7 +42,7 @@ Follow these steps for completing your project.
 
 - Refactor your project using a component library that was covered in class (SemanticUI or styled-components)
 - Implement and use at least a few styled components to beautify your project
-- Finally, implement snapshot testing in your react application
+<!-- - Finally, implement snapshot testing in your react application -->
 
 
 ## Stretch Problems

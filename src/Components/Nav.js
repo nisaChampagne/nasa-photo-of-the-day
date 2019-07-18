@@ -5,10 +5,19 @@ function Nav(){
     return(
     
         <div>
-            <Button color='teal'className='navs' href='https://www.nasa.gov/'> Home</Button>
-            <Button color='blue'className='navs' href='https://www.nasa.gov/'> Space</Button>
-            <Button color='teal' className='navs' href='https://www.nasa.gov/'> Science</Button>
-            <Button color='blue'className='navs' href='https://www.nasa.gov/'> Stuff</Button>
+            <Button color='red' className='navs' href='https://www.nasa.gov/'> Science</Button>
+            <Button color='orange'className='navs' href='https://www.nasa.gov/'> Space</Button>
+            <Button color='yellow'className='navs' href='https://www.nasa.gov/'> Home</Button>
+            <Button color='red' className='navs' href='https://www.nasa.gov/'> Science</Button>
+            <Button color='orange'className='navs' href='https://www.nasa.gov/'> Space</Button>
+            <Button color='yellow'className='navs' href='https://www.nasa.gov/'> Home</Button>
+            <Button color='red' className='navs' href='https://www.nasa.gov/'> Science</Button>
+            <Button color='orange'className='navs' href='https://www.nasa.gov/'> Space</Button>
+            <Button color='yellow'className='navs' href='https://www.nasa.gov/'> Home</Button>
+            <Button color='red' className='navs' href='https://www.nasa.gov/'> Science</Button>
+            <Button color='orange'className='navs' href='https://www.nasa.gov/'> Space</Button>
+            <Button color='yellow'className='navs' href='https://www.nasa.gov/'> Home</Button>
+
         </div>
     )
 }
