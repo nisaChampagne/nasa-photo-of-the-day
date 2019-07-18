@@ -46,11 +46,10 @@ export default function NasaHolder() {
               2019-07-18
             </Button>
           </Segment>
-        {data ? <NasaCard title={data.title}
-                           url={data.url}
-                           explanation={data.explanation}
-                           date={data.date} />
-               : <div> Oops one second </div>}
+            <NasaCard   title={data.title}
+            url={data.url}
+            explanation={data.explanation}
+            date={data.date} />
         {/* <h2>{data.title}</h2>
         <p className='nasa-date' >{data.date}</p>
         <img className='nasaImage' alt='Space' src={data.url} style={{ maxWidth: "400px"}} />
