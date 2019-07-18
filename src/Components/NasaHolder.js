@@ -21,29 +21,29 @@ export default function NasaHolder() {
 
     return (
       <div className="cardHolder">
-          <Segment inverted>
+          <Segment inverted color='teal'>
             <Button basic inverted onClick={() => setDate("2019-01-01")}>
               2019-01-01
             </Button>
-            <Button basic inverted color='red' onClick={() => setDate("2019-01-02")}>
+            <Button basic inverted color='olive' onClick={() => setDate("2019-01-02")}>
               2019-01-02
             </Button>
-            <Button basic inverted color='orange' onClick={() => setDate("2019-01-03")}>
+            <Button basic inverted color='green' onClick={() => setDate("2019-01-03")}>
               2019-01-03
             </Button>
-            <Button basic inverted color='yellow' onClick={() => setDate("2019-01-04")}>
+            <Button basic inverted color='teal' onClick={() => setDate("2019-01-04")}>
               2019-01-04
             </Button>
-            <Button basic inverted color='olive' onClick={() => setDate("2019-01-05")}>
+            <Button basic inverted color='blue' onClick={() => setDate("2019-01-05")}>
               2019-01-05
             </Button>
-            <Button basic inverted color='green' onClick={() => setDate("2019-01-06")}>
+            <Button basic inverted color='olive' onClick={() => setDate("2019-01-06")}>
               2019-01-06
             </Button>
-            <Button basic inverted color='teal' onClick={() => setDate("2019-01-07")}>
+            <Button basic inverted color='green' onClick={() => setDate("2019-01-07")}>
               2019-01-07
             </Button>
-            <Button basic inverted color='blue' onClick={() => setDate("2019-07-18")}>
+            <Button basic inverted color='teal' onClick={() => setDate("2019-07-18")}>
               2019-07-18
             </Button>
           </Segment>

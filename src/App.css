@@ -1,21 +1,17 @@
-html{
-  background: #e74c3c;
-}
 
-.container {
-  text-align: center;
-  background-image:linear-gradient(#000000, #e74c3c);
+body {
+  background-image:linear-gradient(#1fa2ff,#12d8fa,#a6ffcb);
 }
 
 .cardHolder{
   width: 1000px;
-  background: linear-gradient(#000000, #e74c3c);
-  box-shadow:  10px 10px  10px rgb(16, 17, 16);
+  background-image: linear-gradient(#1fa2ff,#12d8fa,#a6ffcb);
+  box-shadow:  10px 10px  10px #2bc0e4;
   margin: 3rem auto;
   padding: 3rem 2rem;
   min-height: 500px;
 }
-.nasa-navs{
+/* .nasa-navs{
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -26,15 +22,14 @@ html{
    color: white;
    margin-left: 20px;
    font-size: 25px
- }
+ } */
 
 .nasaImage{
-  box-shadow: 5px 5px 5px #000000;
+  box-shadow: 5px 5px 5px #2bc0e4;
 }
 
-h1, h2{
+h1,h2{
   color: white;
-  font-size: 25px;
 }
 
 /* button{
